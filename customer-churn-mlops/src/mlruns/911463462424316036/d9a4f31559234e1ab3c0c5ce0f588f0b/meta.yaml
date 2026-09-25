@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/d9a4f31559234e1ab3c0c5ce0f588f0b/artifacts
+end_time: 1790323119921
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: d9a4f31559234e1ab3c0c5ce0f588f0b
+run_name: efficient-rat-936
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790323119607
+status: 3
+tags: []
+user_id: axitm

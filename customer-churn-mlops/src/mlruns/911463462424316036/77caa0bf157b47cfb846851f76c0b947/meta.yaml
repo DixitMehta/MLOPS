@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/77caa0bf157b47cfb846851f76c0b947/artifacts
+end_time: 1790323105805
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: 77caa0bf157b47cfb846851f76c0b947
+run_name: able-panda-30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790323105673
+status: 3
+tags: []
+user_id: axitm

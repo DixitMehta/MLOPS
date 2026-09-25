@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/6b33c1d783864161b04fa16340a395da/artifacts
+end_time: 1790322614734
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: 6b33c1d783864161b04fa16340a395da
+run_name: gregarious-stoat-89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790322614539
+status: 4
+tags: []
+user_id: axitm

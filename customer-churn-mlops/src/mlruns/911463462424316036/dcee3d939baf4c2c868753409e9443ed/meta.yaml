@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/dcee3d939baf4c2c868753409e9443ed/artifacts
+end_time: 1790322699360
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: dcee3d939baf4c2c868753409e9443ed
+run_name: likeable-tern-744
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790322699165
+status: 3
+tags: []
+user_id: axitm
