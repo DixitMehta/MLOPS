@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
-
+from sklearn.pipeline import Pipeline
 
 # Load dataseet
 df = pd.read_csv('../data/raw/Customer.csv')
@@ -37,6 +37,22 @@ preprocessor = ColumnTransformer(
     remainder = 'passthrough'
 )
 
+
+# Create complete ML pipeline
+pipeline = Pipeline(
+    steps=[
+        ('Preprocessor',preprocessor),
+        (
+            "model",
+            RandomForestClassifier(
+                n_estimators =100,
+                random_state=42
+            )
+
+        )
+    ]
+)
+
 # Train / test split
 x_train,x_test,y_train,y_test = train_test_split(
     x,
@@ -46,27 +62,18 @@ x_train,x_test,y_train,y_test = train_test_split(
     stratify=y
 )
 
-# Create Random Forest Model
 
-model = RandomForestClassifier(
-    n_estimators=100,
-    random_state=42
-)
+# Train complete pipeline
+pipeline.fit(x_train,y_train)
 
-# Transform training data
-x_train_processed = preprocessor.fit_transform(x_train)
+#  Make predicitons
+y_pred = pipeline.predict(x_test)
 
-# Transform test data
-x_test_processed = preprocessor.transform(x_test)
 
-# Train model
-model.fit(x_train_processed, y_train)
-joblib.dump(model,'../models/random_forest_model.pkl')
+# Save complete pipeline
+joblib.dump(pipeline,'../models/customer_churned_pipeline.pkl')
 print('Model saved to the path successfully!!')
 
-
-# Make predictions
-y_pred = model.predict(x_test_processed)
 
 # Evaluate Model
 accuracy = accuracy_score(y_test, y_pred)
