@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/dd0781912c8b453aba171d9cc9d2fdf5/artifacts
+end_time: 1790348074559
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: dd0781912c8b453aba171d9cc9d2fdf5
+run_name: secretive-bee-269
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790348074225
+status: 3
+tags: []
+user_id: axitm

@@ -14,7 +14,7 @@ mlflow.set_experiment('customer-churn')
 n_estimators =200
 
 # Load dataseet
-df = pd.read_csv('../data/raw/Customer.csv')
+df = pd.read_csv('../data/raw/customer.csv')
 
 # seaparate features and target
 x = df.drop('churned', axis = 1)
@@ -79,18 +79,19 @@ with mlflow.start_run():
     accuracy = accuracy_score(y_test, y_pred)
 
     # Save complete pipeline
-    joblib.dump(pipeline,'../models/customer_churned_pipeline.pkl')
+    joblib.dump(pipeline,'../models/customer_churned_pipeline_V2.pkl')
     print('Model saved to the path successfully!!')
 
     # Log paramters for MLFOW
     mlflow.log_param("n_estimators",n_estimators)
     mlflow.log_param("random_state",42)
+    mlflow.log_param("Dataset version", "e299b7b8fd516700fb046fbb5733dedd")
 
     # Log Metrics
     mlflow.log_metric("accuracy",accuracy)
 
     # Log model artifacts
-    mlflow.log_artifact('../models/customer_churned_pipeline.pkl') 
+    mlflow.log_artifact('../models/customer_churned_pipeline_V2.pkl') 
 
 print('Predictions')
 print(y_pred)

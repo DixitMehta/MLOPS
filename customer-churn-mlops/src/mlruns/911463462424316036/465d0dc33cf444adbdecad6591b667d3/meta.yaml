@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/465d0dc33cf444adbdecad6591b667d3/artifacts
+end_time: 1790348413541
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: 465d0dc33cf444adbdecad6591b667d3
+run_name: ambitious-smelt-541
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790348413185
+status: 3
+tags: []
+user_id: axitm

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/94ef4007fe8146cf9032633a024817d8/artifacts
+end_time: 1790348252551
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: 94ef4007fe8146cf9032633a024817d8
+run_name: mysterious-sheep-512
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790348252101
+status: 3
+tags: []
+user_id: axitm
