@@ -1,6 +1,8 @@
 import pandas as pd
 import joblib
 import mlflow
+import subprocess
+import yaml
 
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
@@ -67,6 +69,21 @@ x_train,x_test,y_train,y_test = train_test_split(
     stratify=y
 )
 
+# Checks if the dvc status
+# result = subprocess.run(
+#     ['dvc','status'],
+#     capture_output=True,
+#     text=True
+#                         )
+# print(result.stdout)
+
+# Get DVC hash from the .dvc file for logging into MLFLOW.
+
+with open('../data/raw/customer.csv.dvc','r') as file:
+    dvc_data = yaml.safe_load(file)
+dataset_version = dvc_data['outs'][0]['md5']
+print('dataset version:' ,dataset_version)
+
 with mlflow.start_run():
 
     # Train complete pipeline
@@ -85,7 +102,7 @@ with mlflow.start_run():
     # Log paramters for MLFOW
     mlflow.log_param("n_estimators",n_estimators)
     mlflow.log_param("random_state",42)
-    mlflow.log_param("Dataset version", "e299b7b8fd516700fb046fbb5733dedd")
+    mlflow.log_param("Dataset version", dataset_version)
 
     # Log Metrics
     mlflow.log_metric("accuracy",accuracy)

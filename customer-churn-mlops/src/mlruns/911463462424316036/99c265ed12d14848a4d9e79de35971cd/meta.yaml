@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Dixit/MLOPS/customer-churn-mlops/src/mlruns/911463462424316036/99c265ed12d14848a4d9e79de35971cd/artifacts
+end_time: 1790431696592
+entry_point_name: ''
+experiment_id: '911463462424316036'
+lifecycle_stage: active
+run_id: 99c265ed12d14848a4d9e79de35971cd
+run_name: languid-chimp-813
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790431696247
+status: 3
+tags: []
+user_id: axitm
