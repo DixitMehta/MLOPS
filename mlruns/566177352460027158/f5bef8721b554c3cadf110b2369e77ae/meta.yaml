@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dixit/MLOPS/mlruns/566177352460027158/f5bef8721b554c3cadf110b2369e77ae/artifacts
+deleted_time: 1790348380636
+end_time: 1790347921087
+entry_point_name: ''
+experiment_id: '566177352460027158'
+lifecycle_stage: deleted
+run_id: f5bef8721b554c3cadf110b2369e77ae
+run_name: secretive-koi-231
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1790347920818
+status: 4
+tags: []
+user_id: axitm
