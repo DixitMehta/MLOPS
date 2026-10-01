@@ -18,6 +18,7 @@ print(y)
 # Encode categorical column (converting string data of city column in numerical values or bianry values)
 
 encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
+
 city_encoded = encoder.fit_transform(x[['city']])
 
 city_columns = encoder.get_feature_names_out(['city'])
@@ -27,6 +28,7 @@ city_df = pd.DataFrame(
     columns = city_columns,
     index=x.index
 )
+print('city df variable: ', city_df)
 
 # Remove original city column
 x = x.drop('city', axis=1)
